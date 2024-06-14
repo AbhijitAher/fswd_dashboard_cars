@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
+// import logo from './logo.svg';
+// import { Counter } from './features/counter/Counter';
 import './App.css';
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <div>
         <div>Navbar</div>
-        <div>Filter Data By</div>
+        <div className='text-red-800 font-xl'>Filter Data By</div>
         <div>Recent Data</div>
         <div>
           Inventory Chart
