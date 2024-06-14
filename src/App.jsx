@@ -8,6 +8,7 @@ function App() {
     <div className="App">
       <div>
         <div>Navbar</div>
+        <div>Filter Data By</div>
         <div>Recent Data</div>
         <div>
           Inventory Chart
