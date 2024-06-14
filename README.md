@@ -1,3 +1,15 @@
+# Installing and Running the Project
+
+## Run this project after installing the backend for this project
+
+### 1. download zip file of the project repo
+### 2. extract files locally
+### 3. open the folder containing zip file 
+### 4. install dependencies `npm install`
+### 5. run project after backend is started locally using `npm run start`
+### 6. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+
 # Getting Started with Create React App and Redux
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.

@@ -71,17 +71,17 @@ export default function RecentData({ data }) {
       <div className="flex">
         {/* New */}
         <RecentDataCard name="# New Units" value={sortedData.new.Units} />
-        <RecentDataCard name="New MSRP" value={"$" + sortedData.new.MSRP} />
-        <RecentDataCard name="New MSRPAvg" value={sortedData.new.AvgMSRP} />
+        <RecentDataCard name="New MSRP" value={sortedData.new.MSRP} type="price"/>
+        <RecentDataCard name="New Avg. MSRP" value={parseInt(sortedData.new.AvgMSRP)} type="price"/>
 
         {/* Used */}
         <RecentDataCard name="# Used Units" value={sortedData.used.Units} />
-        <RecentDataCard name="Used MSRP" value={"$" + sortedData.used.MSRP} />
-        <RecentDataCard name="Used MSRPAvg" value={sortedData.used.AvgMSRP} />
+        <RecentDataCard name="Used MSRP" value={sortedData.used.MSRP} type="price"/>
+        <RecentDataCard name="Used Avg. MSRP" value={parseInt(sortedData.used.AvgMSRP)} type="price"/>
 
         {/* CPO */}
-        <RecentDataCard name="# cpo Units" value={sortedData.cpo.Units} />
-        <RecentDataCard name="cpo MSRP" value={"$" + sortedData.cpo.MSRP} />
+        <RecentDataCard name="# CPO Units" value={sortedData.cpo.Units}/>
+        <RecentDataCard name="CPO MSRP" value={sortedData.cpo.MSRP} type="price"/>
       </div>
     </div>
   ) : (
