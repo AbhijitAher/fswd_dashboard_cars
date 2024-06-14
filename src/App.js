@@ -1,20 +1,23 @@
-import React from 'react';
-// import logo from './logo.svg';
+import React from "react";
 // import { Counter } from './features/counter/Counter';
-import './App.css';
+import "./App.css";
+import Navbar from "./app/components/Navbar";
+import FilterSlider from "./app/components/FilterSlider";
+import HistoryLog from "./app/components/HistoryLog";
+import InventoryDetails from "./app/components/InventoryDetails";
+import MSRPDetails from "./app/components/MSRPDetails";
+import RecentData from "./app/components/RecentData";
 
 function App() {
   return (
     <div className="App">
+      <FilterSlider />
       <div>
-        <div>Navbar</div>
-        <div className='text-red-800 font-xl'>Filter Data By</div>
-        <div>Recent Data</div>
-        <div>
-          Inventory Chart
-        </div>
-        <div>Avg MSRP Chart</div>
-        <div>History Log</div>
+        <Navbar />
+        <RecentData />
+        <InventoryDetails />
+        <MSRPDetails />
+        <HistoryLog />
       </div>
     </div>
   );
